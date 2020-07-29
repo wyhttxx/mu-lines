@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tijiao(){
+            document.getElementById("frm1").submit()
+        }
+    </script>
+</head>
+<body>
+    <form action="http://127.0.0.1:3000/adduser" method="POST" id="frm1">
+        <label>请输入id:</label>
+        <input type="number" name="id">
+        <label>请输入用户名:</label>
+        <input type="text" name="username">
+        <label>请输入密码</label>
+        <input type="password" name="password">
+        <label>请输入工作</label>
+        <input type="text" name="job">
+        <input type="button" value="推荐" onclick="tijiao()">
+    </form>
+</body>
+</html>
